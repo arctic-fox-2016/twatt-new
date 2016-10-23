@@ -12,26 +12,23 @@
 
 	</form>
 
-	<form action="/tweet" method="POST">
+	<form>
 
 	    <div class="form-group">
-	        <textarea name="tweeting" class="form-control" placeholder="tweet what's in your mind"></textarea>
+	        <textarea  id="tweeting" class="form-control" name="text" placeholder="tweet what's in your mind"></textarea>
 	    </div>
 
 	    <div class="form-group">
-	        <button type="submit" class="btn btn-primary btn-md">Tweet</button>
+	        <button id='btnsend' class="btn btn-primary btn-md">Tweet</button>
 	    </div>
 
 	</form>
 
 	<div><h1>MY TIMELINE</h1></div>
 
-	<% for (i in myTweet) {%>
-		<br>
-		<div class="jumbotron">
-			<p><%= myTweet[i].text %></p>
-			<p style="font-size: 10px"><%= myTweet[i].created_at %></p>
+		<div  id="tweetbody">
+
 		</div>
-	<% } %>
+
 
 </div>
